@@ -1,0 +1,586 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+
+    <style>
+        @font-face {
+            font-family: Calibre;
+            src: url(font/Calibre-Semibold.ttf);
+        }
+
+        @font-face {
+            font-family: Averta;
+            src: url(font/Averta.otf);
+        }
+
+
+        * {
+            font-family: Averta;
+        }
+
+        h1,
+        h2,
+        h3 {
+            font-family: Calibre;
+        }
+
+        .min-height-popular {
+            height: 96px;
+        }
+
+        .min-height-program {
+            height: 64px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .font-weight-600 {
+            font-weight: 600;
+        }
+
+        .font-32 {
+            font-size: 32px;
+        }
+
+        .blog-title {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            font-family: Calibre;
+        }
+
+        .big-title {
+            font-family: Calibre;
+            font-size: 72px;
+        }
+
+        .color-light {
+            color: #7a7878;
+        }
+
+
+        @media (min-width : 1200px) {
+
+            .container {
+                max-width: 1226px;
+            }
+
+        }
+
+        footer {
+            background-color: #F4F2F2;
+        }
+
+        .btn-light {
+            background-color: #F4F2F2;
+            border: none;
+        }
+
+        .btn-light:hover {
+            background-color: #ffffff;
+        }
+
+        .cards-width {
+            max-width: 800px;
+        }
+
+
+
+        .deneme {
+            width: 100%;
+            padding-right: 64px;
+            padding-left: 64px;
+
+        }
+
+        #moreButton {
+            background-color: #def1f5;
+
+        }
+
+        #moreButton:hover {
+            background-color: #bbe3eb;
+        }
+
+        .carousel-cell {
+            width: 30%;
+            height: auto;
+            margin-right: 10px;
+        }
+
+
+        @media screen and (max-width: 1182px) {
+            .deneme {
+                width: 100%;
+                padding-right: 32px;
+                padding-left: 32px;
+
+            }
+
+            .collapse {
+                font-size: 14px !important;
+
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
+    <title>En iyi Bölümler | Univerlist</title>
+</head>
+
+<body>
+
+    <nav class="navbar border navbar-expand-lg sticky-top  navbar-light bg-white  p-0">
+
+        <div class="container-fluid p-0">
+            <div class="deneme py-2">
+                <div class="col p-1">
+                    <div class="row justify-content-between align-items-baseline m-0">
+                        <a href="#" class="navbar-brand"> <img
+                                src="https://univerlist.com/static/site/images/newDesign/univerlist_logo.svg" alt="logo"
+                                style="width: 170px;">
+                        </a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarList"
+                            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse ml-5" id="navbarList">
+                            <ul class="navbar-nav mt-2">
+                                <li class="nav-item ml-4">
+                                    <a href="#"
+                                        class="nav-link text-dark font-weight-600  btn btn-outline-light border-0">Üniversiteler</a>
+                                </li>
+                                <li class="nav-item ml-4">
+                                    <a href="#"
+                                        class="nav-link text-dark font-weight-600  btn btn-outline-light border-0">Karşılaştır</a>
+                                </li>
+                                <li class="nav-item ml-4">
+                                    <a href="#"
+                                        class="nav-link text-dark font-weight-600  btn btn-outline-light border-0">Tercih</a>
+                                </li>
+                                <li class="nav-item ml-4">
+                                    <a href="#"
+                                        class="nav-link text-dark font-weight-600  btn btn-outline-light border-0">Tercih
+                                        Botu</a>
+                                </li>
+                                <li class="nav-item ml-4">
+                                    <a href="#"
+                                        class="nav-link text-dark font-weight-600  btn btn-outline-light border-0">Bölümler</a>
+                                </li>
+                                <li class="nav-item ml-4">
+                                    <a href="#"
+                                        class="nav-link text-dark font-weight-600  btn btn-outline-light border-0">Blog</a>
+                                </li>
+
+                            </ul>
+
+                            <ul class="navbar-nav ml-auto">
+                                <li class="nav-item">
+                                    <a href="#"
+                                        class="nav-link text-dark font-weight-600  btn btn-outline-light border-0">Kayıt
+                                        Ol</a>
+                                </li>
+                                <li class="nav-item ml-4">
+                                    <a href="#"
+                                        class="nav-link text-dark font-weight-600  btn btn-outline-light border-0">Giriş
+                                        Yap</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </nav>
+
+
+    <section>
+        <div class="container my-5">
+
+            <!-- Başlık -->
+            <div class="row py-5 my-5">
+                <div class="col-md-12 align-items-center">
+                    <div class="row">
+                        <img src="https://www.univerlist.com/static/site/images/newDesign/arrow.svg"
+                            class=" cursor-pointer my-auto mr-2 d-none"
+                            style="width: 24px; height: 40px; cursor: pointer;" id="backArrow">
+                        <h1 class="font-weight-600 big-title ml-3">Bölümler</h1>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="row">
+
+                <div class="col-md-12">
+
+                    <div class="row">
+                        <div class="col-xl-6 col-md-6">
+                            <div class="searchbar-container border-bottom border-dark pb-2">
+                                <div class="row align-items-center ml-3">
+                                    <img src="https://univerlist.com/static/site/images/newDesign/search.svg" class="">
+
+                                    <input id="search" type="text" class="border-0 h3 text-muted ml-4"
+                                        style="outline : 0;" placeholder="Bölüm Ara">
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                    <div class="row my-4" id="program_container">
+                    </div>
+
+                    <div class="row justify-content-center">
+                        <button id="moreButton" type="submit"
+                            class="btn text-dark px-4 font-weight-600 rounded-pill">Daha
+                            Fazla Göster</button>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+    </section>
+
+    <section>
+        <div class="container my-5 pb-5">
+            <div class="row">
+                <div class="col-md-12 mb-5 mt-5">
+                    <h2 class="font-weight-600">En Popüler Bölümler</h2>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-4 col-lg-3 mb-5">
+
+
+                            <a href="#"
+                                class="btn btn-light d-flex justify-content-center align-items-center text-center min-height-popular font-weight-600">Yazılım
+                                Mühendisliği</a>
+
+
+                        </div>
+
+                        <div class="col-md-4 col-lg-3 mb-5">
+
+                            <a href="#"
+                                class="btn btn-light d-flex justify-content-center align-items-center text-center min-height-popular font-weight-600">Psikiyatri</a>
+
+                        </div>
+
+                        <div class="col-md-4 col-lg-3 mb-5">
+
+                            <a href="#"
+                                class="btn btn-light  d-flex justify-content-center align-items-center text-center min-height-popular font-weight-600">Bilgisayar
+                                Mühendisliği</a>
+
+                        </div>
+
+
+                        <div class="col-md-4 col-lg-3 mb-5">
+
+                            <a href="#"
+                                class="btn btn-light  d-flex justify-content-center align-items-center text-center min-height-popular font-weight-600">Psikoloji</a>
+
+                        </div>
+
+
+                        <div class="col-md-4 col-lg-3 mb-5">
+
+                            <a href="#"
+                                class="btn btn-light d-flex justify-content-center align-items-center text-center min-height-popular font-weight-600">Siber
+                                Güvenlik</a>
+
+                        </div>
+
+
+                        <div class="col-md-4 col-lg-3 mb-5">
+
+                            <a href="#"
+                                class="btn btn-light d-flex justify-content-center align-items-center text-center min-height-popular font-weight-600">Moleküler
+                                Biyoloji ve Genetik</a>
+
+                        </div>
+
+
+                        <div class="col-md-4 col-lg-3 mb-5">
+
+                            <a href="#"
+                                class="btn btn-light d-flex justify-content-center align-items-center text-center min-height-popular font-weight-600">Hukuk</a>
+
+                        </div>
+
+
+                        <div class="col-md-4 col-lg-3 mb-5">
+
+                            <a href="#"
+                                class="btn btn-light d-flex justify-content-center align-items-center text-center min-height-popular font-weight-600">İşletme</a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <section>
+        <div class="container-fluid" style="background: #F0F1BE;">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-md-12 p-4">
+                        <h1 class="font-weight-bold mb-4 big-title">Univerlist Tercih Robotu</h1>
+                        <a href="" class="btn btn-dark rounded-pill px-4 py-2 font-weight-600">Hemen Dene!</a>
+                    </div>
+                    <div class="col-lg-6 d-none d-lg-block d-xl-block">
+                        <img src="https://www.univerlist.com/static/site/images/newDesign/pillow_banner.png"
+                            class="img-fluid" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container py-5 mt-5">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="font-weight-600">İngiltere'deki En Popüler Bölümler</h2>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container pb-5">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-4 col-lg-3 mb-5">
+                            <a href="#"
+                                class="btn btn-light d-flex justify-content-center align-items-center text-center min-height-popular font-weight-600">Kimya
+                                ve Süreç Mühendisliği</a>
+
+                        </div>
+
+                        <div class="col-md-4 col-lg-3 mb-5">
+
+                            <a href="#"
+                                class="btn btn-light d-flex justify-content-center align-items-center text-center min-height-popular font-weight-600">İç
+                                Mimarlık ve Çevre Tasarımı</a>
+
+                        </div>
+
+                        <div class="col-md-4 col-lg-3 mb-5">
+
+                            <a href="#"
+                                class="btn btn-light d-flex justify-content-center align-items-center text-center min-height-popular font-weight-600">Sosyal
+                                Hizmet</a>
+
+                        </div>
+
+
+                        <div class="col-md-4 col-lg-3 mb-5">
+
+                            <a href="#"
+                                class="btn btn-light d-flex justify-content-center align-items-center text-center min-height-popular font-weight-600">Sahne
+                                ve Gösteri Sanatları Teknolojisi</a>
+
+                        </div>
+
+
+                        <div class="col-md-4 col-lg-3 mb-5">
+
+                            <a href="#"
+                                class="btn btn-light d-flex justify-content-center align-items-center text-center min-height-popular font-weight-600">Çevre
+                                Mühendisliği</a>
+
+                        </div>
+
+
+                        <div class="col-md-4 col-lg-3 mb-5">
+
+                            <a href="#"
+                                class="btn btn-light d-flex justify-content-center align-items-center text-center min-height-popular font-weight-600">Muhasebe
+                                ve Finans Yönetimi</a>
+
+                        </div>
+
+
+                        <div class="col-md-4 col-lg-3 mb-5">
+
+                            <a href="#"
+                                class="btn btn-light d-flex justify-content-center align-items-center text-center min-height-popular font-weight-600">Çerkez
+                                Dili ve Edebiyatı</a>
+
+                        </div>
+
+
+                        <div class="col-md-4 col-lg-3 mb-5">
+
+                            <a href="#"
+                                class="btn btn-light d-flex justify-content-center align-items-center text-center min-height-popular font-weight-600">İnsan
+                                ve Toplum Bilimleri</a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="py-5">
+        <div class="container pb-5">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="font-weight-600">Blog Yazıları</h2>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container pb-5">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col">
+                            <div class="carousel" data-flickity='{ "groupCells": 3 }'>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <footer class="p-5">
+        <div class="container pt-5">
+            <div class="row">
+                <div class="col">
+                    <h3 class="font-weight-600 font-32">Univerlist</h3>
+                    <ul class="list-unstyled font-weight-600 color-light">
+                        <li class="pt-2 pb-2"><a href="#" class="text-muted text-decoration-none">Lisans</a></li>
+                        <li class="pt-2 pb-2"><a href="#" class="text-muted text-decoration-none">Yüksek Lisans</a></li>
+                        <li class="pt-2 pb-2"><a href="#" class="text-muted text-decoration-none">Online Eğitim</a></li>
+                        <li class="pt-2 pb-2"><a href="#" class="text-muted text-decoration-none">Disiplinler</a></li>
+                        <li class="pt-2 pb-2"><a href="#" class="text-muted text-decoration-none">Ülkeler</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h3 class="font-weight-600 font-32">Özellikler</h3>
+                    <ul class="list-unstyled font-weight-600 color-light">
+                        <li class="pt-2 pb-2"><a href="#" class="text-muted text-decoration-none">Karşılaştır</a></li>
+                        <li class="pt-2 pb-2"><a href="#" class="text-muted text-decoration-none">Tercih Botu</a></li>
+                        <li class="pt-2 pb-2"><a href="#" class="text-muted text-decoration-none">Sıralamalar</a></li>
+                        <li class="pt-2 pb-2"><a href="#" class="text-muted text-decoration-none">Haberler</a></li>
+                        <li class="pt-2 pb-2"><a href="#" class="text-muted text-decoration-none">İlanlar</a> <a
+                                href="#" class="btn btn-sm btn-dark font-weight-600 p-1"
+                                style="font-size: 0.7em;">YENİ</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h3 class="font-weight-600 font-32">Şirket</h3>
+                    <ul class="list-unstyled font-weight-600 color-light">
+                        <li class="pt-2 pb-2"><a href="#" class="text-muted text-decoration-none">Hakkında</a></li>
+                        <li class="pt-2 pb-2"><a href="#" class="text-muted text-decoration-none">Kariyer</a></li>
+                        <li class="pt-2 pb-2"><a href="#" class="text-muted text-decoration-none">uL Puanı</a></li>
+                        <li class="pt-2 pb-2"><a href="#" class="text-muted text-decoration-none">İletişim</a></li>
+                        <li class="pt-2 pb-2"><a href="#" class="text-muted text-decoration-none">Üniversiteler İçin</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h3 class="font-weight-600 font-32">Sosyal</h3>
+                    <ul class="list-unstyled font-weight-600 color-light">
+                        <li class="pt-2 pb-2"><a href="#" class="text-muted text-decoration-none">Facebook</a></li>
+                        <li class="pt-2 pb-2"><a href="#" class="text-muted text-decoration-none">Twitter</a></li>
+                        <li class="pt-2 pb-2"><a href="#" class="text-muted text-decoration-none">LinkedIn</a></li>
+                        <li class="pt-2 pb-2"><a href="#" class="text-muted text-decoration-none">Youtube</a></li>
+                        <li class="pt-2 pb-2"><a href="#" class="text-muted text-decoration-none">Instagram</a></li>
+                    </ul>
+                </div>
+                <div class="col align-items-center">
+                    <div class="row mb-4">
+                        <h3 class="font-weight-600 font-32">Dil</h3>
+                        <select class="form-control border-0">
+                            <option>Türkçe</option>
+                            <option>English</option>
+                        </select>
+                    </div>
+                    <div class="row">
+                        <h3 class="font-weight-600 font-32">Para Birimi</h3>
+                        <select class="form-control border-0">
+                            <option>TRY</option>
+                            <option>USD</option>
+                            <option>EUR</option>
+                            <option>GBP</option>
+                        </select>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="row mt-5 justify-content-between">
+                <div class="col-6">
+                    © Univerlist
+                </div>
+                <div class="col-6">
+                    <ul class="list-unstyled list-inline text-right">
+                        <li class="list-inline-item text-muted">Kullanıcı Lisans Sözleşmesi</li>
+                        <li class="list-inline-item text-muted">Gizlilik Beyanı</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+        integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous">
+    </script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.20/lodash.min.js"></script>
+    <script src="js/programs.js"></script>
+
+
+</body>
+
+</html>
