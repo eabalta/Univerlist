@@ -49,6 +49,9 @@ function searchFunc(firstPageProgramURL, text) {
 
             if (data.next != null) {
                 window.searchURL = data.next;
+                $("#moreButton").show();
+            } else {
+                $("#moreButton").hide();
             }
 
         });
@@ -67,6 +70,7 @@ function uploadFirstPagePrograms(firstPageProgramURL) {
         });
         window.programs_url = data["next"];
     });
+    $("#moreButton").show();
 }
 
 
@@ -77,7 +81,6 @@ function more(programs_url, flag) {
                 `<div class="col-md-3 mt-4"> <a href="#" class="btn btn-light d-flex justify-content-center align-items-center text-center min-height font-weight-600 min-height-program">${element.name}</a> </div>`
             );
         });
-
         if (data.next != null && flag) {
             window.searchURL = data.next;
         } else if (!flag) {
