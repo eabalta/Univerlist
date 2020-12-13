@@ -1,0 +1,22 @@
+.min-height-popular {
+    height: 96px;
+}
+
+.min-height-program {
+    height: 64px;
+}
+
+.carousel-cell {
+    width: 30%;
+
+    margin-right: 10px;
+}
+
+#moreButton {
+    background-color: #def1f5;
+
+}
+
+#moreButton:hover {
+    background-color: #bbe3eb;
+}

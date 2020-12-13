@@ -1,0 +1,12 @@
+.blog-title {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    font-family: Calibre;
+}
+
+.cards-width {
+    max-width: 800px;
+}

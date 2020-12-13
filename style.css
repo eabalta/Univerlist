@@ -1,0 +1,79 @@
+@font-face {
+    font-family: Calibre;
+    src: url(font/Calibre-Semibold.ttf);
+}
+
+@font-face {
+    font-family: Averta;
+    src: url(font/Averta.otf);
+}
+
+* {
+    font-family: Averta;
+}
+
+h1,
+h2,
+h3 {
+    font-family: Calibre;
+}
+
+a {
+    text-decoration: none;
+}
+
+footer {
+    background-color: #F4F2F2;
+}
+
+.font-weight-600 {
+    font-weight: 600;
+}
+
+.font-32 {
+    font-size: 32px;
+}
+
+.big-title {
+    font-family: Calibre;
+    font-size: 72px;
+}
+
+.btn-light {
+    background-color: #F4F2F2;
+    border: none;
+}
+
+.btn-light:hover {
+    background-color: #ffffff;
+}
+
+.color-light {
+    color: #7a7878;
+}
+
+.navinnercont {
+    width: 100%;
+    padding-right: 64px;
+    padding-left: 64px;
+
+}
+
+@media screen and (min-width : 1200px) {
+    .container {
+        max-width: 1226px;
+    }
+
+}
+
+@media screen and (max-width: 1182px) {
+    .navinnercont {
+        width: 100%;
+        padding-right: 32px;
+        padding-left: 32px;
+    }
+
+    .collapse {
+        font-size: 14px !important;
+    }
+}
